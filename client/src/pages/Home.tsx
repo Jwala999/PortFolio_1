@@ -179,11 +179,11 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex gap-6 justify-center flex-wrap"
             >
-              <Button className="h-14 px-8 text-lg font-bold smooth-transition hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,217,255,0.3)]" size="lg">
-                Explore Projects
+              <Button className="h-14 px-8 text-lg font-bold smooth-transition hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,217,255,0.3)]" size="lg" asChild>
+                <a href="#projects">Explore Projects</a>
               </Button>
-              <Button variant="outline" size="lg" className="h-14 px-8 text-lg font-bold smooth-transition hover:bg-white/5 glow-border">
-                Get Resume
+              <Button variant="outline" size="lg" className="h-14 px-8 text-lg font-bold smooth-transition hover:bg-white/5 glow-border" asChild>
+                <a href="/resume.pdf" download="Jwala_Resume.pdf">Get Resume</a>
               </Button>
             </motion.div>
           </div>
@@ -493,7 +493,7 @@ export default function Home() {
               {[
                 { icon: Mail, href: "mailto:jwalakumar961645@gmail.com", label: "Email" },
                 { icon: Github, href: "https://github.com/jwala999", label: "Github" },
-                { icon: Linkedin, href: "https://linkedin.com/in/jwala-kumar", label: "LinkedIn" }
+                { icon: Linkedin, href: "https://www.linkedin.com/in/jwala-kumar01", label: "LinkedIn" }
               ].map((item, idx) => (
                 <a
                   key={idx}
